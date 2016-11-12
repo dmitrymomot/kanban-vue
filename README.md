@@ -8,5 +8,4 @@ blabla
 blabla
 
 # Contributing
-blabla
-
+[Check our CONTRIBUTING.MD](https://github.com/michaeldegroot/kanban-vue/blob/master/CONTRIBUTING.md)
