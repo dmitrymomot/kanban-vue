@@ -1,7 +1,8 @@
 ![logo](src/assets/logo_small.png)
 
 [![](https://david-dm.org/michaeldegroot/kanban-vue.svg 'deps') ](https://david-dm.org/michaeldegroot/kanban-vue 'david-dm')
-[![](https://travis-ci.org/michaeldegroot/kanban-vue.svg?branch=master 'testing') ](https://travis-ci.org/michaeldegroot/kanban-vue 'travis-ci')
+[![Coverage Status](https://coveralls.io/repos/github/michaeldegroot/kanban-vue/badge.svg?branch=master)](https://coveralls.io/github/michaeldegroot/kanban-vue?branch=master)
+[![](https://travis-ci.org/michaeldegroot/kanban-vue.svg?branch=master) ](https://travis-ci.org/michaeldegroot/kanban-vue 'travis-ci')
 ![](https://img.shields.io/npm/l/express.svg)
 
 > A modern kanban created in Vue with RESTful api

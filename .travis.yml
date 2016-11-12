@@ -7,4 +7,4 @@ node_js:
 os:
   - linux
   - osx
-after_script: node node_modules/coveralls/bin/coveralls.js < coverage/lcov.info
+after_script: node node_modules/coveralls/bin/coveralls.js < test/unit/coverage/lcov.info
