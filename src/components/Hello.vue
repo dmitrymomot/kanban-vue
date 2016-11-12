@@ -11,7 +11,7 @@ export default {
     return {
       msg: 'A modern kanban created in Vue with RESTful api',
     }
-  }
+  },
 }
 </script>
 

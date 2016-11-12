@@ -6,6 +6,8 @@
     "es6": true,
   },
 
+  "plugins": ["html"],
+
   "ecmaFeatures": {
     "modules": 1
   },
