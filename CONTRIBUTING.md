@@ -4,6 +4,7 @@ Please follow the following guidelines when contributing to kanban-vue:
 
   - Make sure your code is conform to the project's linter settings
   - All unit tests should pass
+  - Code coverage needs to remain the same
   
 # Code Coverage
 Code coverage should remain the same percentage for your pull request, if you get a lower coverage score you need to write unit tests
