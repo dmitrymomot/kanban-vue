@@ -13,3 +13,9 @@ npm run unit
 
 # Linting
 Linting rules can be found in .eslintrc, upon executing the `npm run dev` command your files will be linted before being transpiled, so make sure you have clean linted files!
+
+The lint command can also be triggered manually:
+
+```bash
+npm run lint
+````
