@@ -48,6 +48,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ### Continuous integeration
 - [Travis-CI](https://travis-ci.org/)
 - [Coveralls](https://coveralls.io/)
+- [Node Security Platform](https://nodesecurity.io/)
 
 # Contributing
 [Check our CONTRIBUTING.MD](https://github.com/michaeldegroot/kanban-vue/blob/master/CONTRIBUTING.md)
