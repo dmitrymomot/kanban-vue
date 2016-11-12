@@ -12,7 +12,8 @@ Code coverage should remain the same percentage for your pull request, if you ge
 Thanks to [pre-commit](https://github.com/observing/pre-commit) `npm run test` will be executed before every commit
 
 # Unit test
-Run all unit tests with `npm run unit`
+Run all tests `npm run test`
+Run all karma tests `npm run unit`
 
 # Linting
 Linting rules can be found in .eslintrc, upon executing `npm run dev` only your vue files will be linted before being transpiled.
