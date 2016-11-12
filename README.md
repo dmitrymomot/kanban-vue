@@ -43,7 +43,7 @@ npm test
 - [Webpack](https://webpack.github.io/)
 - [Babel](https://babeljs.io/)
 
-### Continuous integeration
+### Continuous integration
 - [Travis-CI](https://travis-ci.org/)
 - [Coveralls](https://coveralls.io/)
 - [Node Security Platform](https://nodesecurity.io/)
