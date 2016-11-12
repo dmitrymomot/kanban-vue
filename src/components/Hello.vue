@@ -9,7 +9,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'A modern kanban created in Vue with RESTful api ',
+      msg: 'A modern kanban created in Vue with RESTful api',
     }
   }
 }
