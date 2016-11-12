@@ -27,11 +27,27 @@ npm test
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-# Specifications
+# Stack
+
+### Main technologies
 - [VueJS](https://vuejs.org/)
 - [Socket.IO](http://socket.io/)
+
+### Libraries
 - [Bootstrap](http://getbootstrap.com/)
-- [Gulp](http://gulpjs.com/)
+
+### Unit testing
+- [Karma](http://karma-runner.github.io/1.0/index.html)
+- [Mocha](https://mochajs.org/)
+- [PhantomJS](http://phantomjs.org/)
+
+### Bundlers
+- [Webpack](https://webpack.github.io/)
+- [Babel](https://babeljs.io/)
+
+### Continuous integeration
+- [Travis-CI](https://travis-ci.org/)
+- [Coveralls](https://coveralls.io/)
 
 # Contributing
 [Check our CONTRIBUTING.MD](https://github.com/michaeldegroot/kanban-vue/blob/master/CONTRIBUTING.md)
