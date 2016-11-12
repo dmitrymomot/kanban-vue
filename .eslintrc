@@ -12,6 +12,11 @@
     "modules": 1
   },
 
+  "globals": {
+    "document": true,
+    "require": true,
+  },
+
   "rules": {
     "accessor-pairs": 2,
     "array-bracket-spacing": 0,
