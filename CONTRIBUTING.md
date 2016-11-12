@@ -14,6 +14,7 @@ Thanks to [pre-commit](https://github.com/observing/pre-commit) `npm run test` w
 
 # Unit test
 Run all tests `npm run test`
+
 Run all karma tests `npm run unit`
 
 # Linting
