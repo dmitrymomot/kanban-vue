@@ -5,6 +5,9 @@ Please follow the following guidelines when contributing to kanban-vue:
   - Make sure your code is conform to the project's linter settings
   - All unit tests should pass
   
+# Code Coverage
+Code coverage should remain the same percentage for your pull request
+  
 # Pre-commit hook
 There is no way to commit code to this project without having the unit test and linter pass. This is thanks to a handy package called [pre-commit](https://github.com/observing/pre-commit). Pre-commit makes sure that `npm run test` is executed and is passed before the commit is accepted.
 
