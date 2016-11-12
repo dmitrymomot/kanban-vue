@@ -1,5 +1,6 @@
 <template>
-  <div class="hello">
+  <div class="cool-effect">
+    <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -12,7 +13,13 @@ export default {
       msg: 'A modern kanban created in Vue with RESTful api',
     }
   },
+  methods: {
+    ready() {
+      console.log('woop')
+    },
+  },
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

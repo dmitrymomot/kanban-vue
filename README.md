@@ -43,6 +43,9 @@ npm test
 - [Webpack](https://webpack.github.io/)
 - [Babel](https://babeljs.io/)
 
+### Boilerplate
+- [http://vuejs-templates.github.io/webpack/](VueJS Templates Webpack)
+
 ### Continuous integration
 - [Travis-CI](https://travis-ci.org/)
 - [Coveralls](https://coveralls.io/)

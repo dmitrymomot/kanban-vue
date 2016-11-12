@@ -5,12 +5,12 @@ Please follow the following guidelines when contributing to kanban-vue:
   - Make sure your code is conform to the project's linter settings
   - All unit tests should pass
   - Code coverage needs to remain the same
-  
+
 # Code Coverage
 Code coverage should remain the same percentage for your pull request, if you get a lower coverage score you need to write unit tests
-  
+
 # Pre-commit hook
-Thanks to [pre-commit](https://github.com/observing/pre-commit) `npm run test` will be executed before every commit
+Thanks to [pre-commit](https://github.com/observing/pre-commit) `npm run test` will be executed before every commit, if a test fails you wont be able to commit as a pre-caution.
 
 # Unit test
 Run all tests `npm run test`

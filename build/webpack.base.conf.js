@@ -1,26 +1,53 @@
-var path = require('path')
-var config = require('../config')
-var utils = require('./utils')
-var projectRoot = path.resolve(__dirname, '../')
+const path = require('path')
+const config = require('../config')
+var webpack = require('webpack')
+const utils = require('./utils')
+const projectRoot = path.resolve(__dirname, '../')
 
-var env = process.env.NODE_ENV
+const env = process.env.NODE_ENV
 // check env & config/index.js to decide weither to enable CSS Sourcemaps for the
 // various preprocessor loaders added to vue-loader at the end of this file
-var cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap)
-var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap)
-var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
+const cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap)
+const cssSourceMapProd = (env === 'production' && config.build.productionSourceMap)
+const useCssSourceMap = cssSourceMapDev || cssSourceMapProd
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    bootstrap: 'bootstrap-loader',
+    app:       './src/main.js',
   },
   output: {
     path: config.build.assetsRoot,
     publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
-    filename: '[name].js'
+    filename: '[name].js',
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
+      Tether: "tether",
+      "window.Tether": "tether",
+      Tooltip: "exports?Tooltip!bootstrap/js/dist/tooltip",
+      Alert: "exports?Alert!bootstrap/js/dist/alert",
+      Button: "exports?Button!bootstrap/js/dist/button",
+      Carousel: "exports?Carousel!bootstrap/js/dist/carousel",
+      Collapse: "exports?Collapse!bootstrap/js/dist/collapse",
+      Dropdown: "exports?Dropdown!bootstrap/js/dist/dropdown",
+      Modal: "exports?Modal!bootstrap/js/dist/modal",
+      Popover: "exports?Popover!bootstrap/js/dist/popover",
+      Scrollspy: "exports?Scrollspy!bootstrap/js/dist/scrollspy",
+      Tab: "exports?Tab!bootstrap/js/dist/tab",
+      Tooltip: "exports?Tooltip!bootstrap/js/dist/tooltip",
+      Util: "exports?Util!bootstrap/js/dist/util",
+    })
+  ],
   resolve: {
-    extensions: ['', '.js', '.vue'],
+    extensions: [
+      '',
+      '.js',
+      '.vue',
+    ],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
       'vue$': 'vue/dist/vue',
@@ -67,7 +94,7 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          name:  utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },
       {
@@ -75,10 +102,10 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
-        }
-      }
-    ]
+          name:  utils.assetsPath('fonts/[name].[hash:7].[ext]')
+        },
+      },
+    ],
   },
   eslint: {
     formatter: require('eslint-friendly-formatter')
@@ -87,8 +114,8 @@ module.exports = {
     loaders: utils.cssLoaders({ sourceMap: useCssSourceMap }),
     postcss: [
       require('autoprefixer')({
-        browsers: ['last 2 versions']
-      })
-    ]
-  }
+        browsers: ['last 2 versions'],
+      }),
+    ],
+  },
 }

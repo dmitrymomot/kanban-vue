@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A modern kanban created in Vue with RESTful api",
   "author": "Michael de Groot <specamps@gmail.com>",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
@@ -15,7 +14,7 @@
     "test"
   ],
   "dependencies": {
-    "pre-commit": "^1.1.3",
+    "jquery": "^3.1.1",
     "vue": "^2.0.1"
   },
   "devDependencies": {
@@ -27,6 +26,8 @@
     "babel-preset-es2015": "^6.0.0",
     "babel-preset-stage-2": "^6.0.0",
     "babel-register": "^6.0.0",
+    "bootstrap-loader": "^1.3.0",
+    "bootstrap-sass": "^3.3.7",
     "chai": "^3.5.0",
     "chalk": "^1.1.3",
     "connect-history-api-fallback": "^1.1.0",
@@ -58,13 +59,18 @@
     "karma-webpack": "^1.7.0",
     "lolex": "^1.4.0",
     "mocha": "^3.1.0",
+    "node-sass": "^3.11.3",
     "opn": "^4.0.2",
     "ora": "^0.3.0",
     "phantomjs-prebuilt": "^2.1.3",
+    "pre-commit": "^1.1.3",
+    "resolve-url-loader": "^1.6.0",
+    "sass-loader": "^4.0.2",
     "semver": "^5.3.0",
     "shelljs": "^0.7.4",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
+    "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vue-loader": "^9.4.0",
     "vue-style-loader": "^1.0.0",
