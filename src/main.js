@@ -1,12 +1,22 @@
 /*eslint no-new: 0*/
 
 import Vue from 'vue'
-import App from './App'
+import routes from './routes'
 
 new Vue({
-  el:         '#app',
-  template:   '<App/>',
-  components: {
-    App,
+  data: {
+    currentRoute: window.location.pathname,
+  },
+  el:       '#app',
+  template: '<App/>',
+  computed: {
+    ViewComponent () {
+      const matchingView = routes[this.currentRoute]
+
+      return matchingView ? require('./routes/' + matchingView + '.vue') : require('./routes/Error404.vue')
+    },
+  },
+  render (h) {
+    return h(this.ViewComponent)
   },
 })
